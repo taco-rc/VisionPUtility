@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="5dip"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="none" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            tools:context="com.example.vision__utility.MainActivity"
+            tools:ignore="MergeRootFrame" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:padding="20dip" >
+
+                <TextView
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect Vision+   "
+                    android:textSize="20sp" />
+
+                <Switch
+                    android:id="@+id/check_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="Repeater "
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip" >
+
+                <ListView
+                    android:id="@+id/repeater_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:scrollbars="none" >
+                </ListView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="Camera "
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip" >
+
+                <ListView
+                    android:id="@+id/camera_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:layout_weight="1"
+                    android:scrollbars="none" >
+                </ListView>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/techView"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
